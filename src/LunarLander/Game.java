@@ -5,6 +5,7 @@ import java.awt.*;
 public class Game extends JFrame {
     Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
     GameGraphics graphic = new GameGraphics();
+    LunarModule lunar = new LunarModule();
     final static int WIDTH = 700;
     final static int HEIGHT = 500;
 
@@ -14,6 +15,7 @@ public class Game extends JFrame {
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         this.setUndecorated(true);
         this.add(graphic);
+//        this.add(lunar);
         this.setVisible(true);
     }
 
